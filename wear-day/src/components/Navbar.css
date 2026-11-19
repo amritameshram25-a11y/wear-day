@@ -1,0 +1,76 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+.navbar {
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wordmark {
+  color: var(--green);
+  font-size: 29px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.wordmark span { color: #b98d5a; }
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 74px;
+  font-size: 12px;
+}
+.nav-item a:hover, .icon-button:hover { color: var(--green); }
+.nav-chevron { margin-left: 5px; }
+.nav-dropdown-toggle { display: none; }
+.nav-dropdown {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: none;
+  min-width: 185px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #eee;
+}
+.nav-item:hover .nav-dropdown,
+.nav-item:focus-within .nav-dropdown,
+.nav-dropdown.dropdown-open { display: grid; }
+.nav-dropdown a { padding: 10px; }
+.nav-dropdown a:hover { background: var(--cream); }
+.nav-actions { display: flex; align-items: center; gap: 17px; }
+.icon-button { position: relative; border: 0; background: none; cursor: pointer; }
+.cart-count { position: absolute; top: -5px; right: -7px; font-size: 9px; }
+.mobile-menu-button { display: none; }
+@media (max-width: 960px) {
+  .navbar { height: 68px; }
+  .main-nav { gap: 14px; }
+  .nav-actions { gap: 11px; }
+}
+@media (max-width: 760px) {
+  .navbar { height: 64px; }
+  .mobile-menu-button { display: grid; }
+  .navbar > .wordmark { position: absolute; left: 50%; transform: translateX(-50%); }
+  .main-nav { position: absolute; top: 64px; left: 0; right: 0; display: none; flex-direction: column; background: white; padding: 10px 20px; }
+  .main-nav.is-open { display: flex; }
+  .nav-item { min-height: 43px; width: 100%; }
+  .nav-dropdown-toggle { display: block; }
+  .nav-dropdown { position: static; display: none; }
+  .nav-dropdown.dropdown-open { display: grid; }
+  .nav-actions { margin-left: auto; }
+  .search-action, .account-action { display: none; }
+}
+@media (max-width: 400px) {
+  .nav-actions { gap: 8px; }
+  .wordmark { font-size: 26px; }
+}
