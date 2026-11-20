@@ -1,0 +1,20 @@
+main { overflow: clip; }
+.section-wrap { width: min(1280px, calc(100% - 56px)); margin-inline: auto; }
+.section-heading { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-bottom:16px; }
+.section-heading h2 { margin:0; font-size:clamp(20px, 2.2vw, 28px); line-height:1.2; letter-spacing:-.04em; font-weight:650; }
+.eyebrow { display:none; }
+.text-link { display:inline-flex; align-items:center; gap:7px; font-size:12px; font-weight:600; white-space:nowrap; }
+.text-link svg { display:none; }
+.button { display:inline-flex; align-items:center; justify-content:center; border-radius:10px; min-height:44px; padding:0 25px; font-size:13px; font-weight:600; transition:transform .2s; }
+.button-dark { background:#101211; color:white; }
+.button-light { background:white; color:#111; }
+.button:hover { transform:translateY(-2px); }
+@media(max-width:600px) { .section-wrap { width:calc(100% - 32px); } .section-heading { gap:12px; } }
+
+/* Full-width storefront: only a small content inset, no centered gutters. */
+.section-wrap { width:100%; max-width:none; margin-inline:0; padding-inline:24px; }
+.hero.section-wrap { width:100%; max-width:none; margin:0; border-radius:0; padding-inline:32px; }
+.outfit-builder { width:100%; margin-inline:0; border-radius:0; padding-inline:24px; }
+.outfit-inner.section-wrap { padding-inline:0; }
+.mobile-bottom-nav { width:100%; max-width:none; margin-inline:0; border-radius:0; }
+@media(max-width:600px) { .section-wrap { width:100%; padding-inline:16px; } .hero.section-wrap { padding-inline:20px; } .outfit-builder { width:100%; padding-inline:16px; } }

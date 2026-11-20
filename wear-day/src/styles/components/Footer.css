@@ -1,0 +1,25 @@
+.site-footer { background:#f8f9f6; color:#232823; border-top:1px solid #eceee7; }
+.newsletter-strip { display:flex; align-items:center; gap:24px; padding:24px; background:#fff; border-bottom:1px solid #eceee7; }
+.newsletter-copy { display:grid; gap:4px; font-size:12px; }
+.newsletter-copy strong { font-size:16px; }
+.newsletter-copy span { color:#6d726b; }
+.newsletter-form { display:flex; gap:12px; width:min(560px,60%); margin-left:auto; }
+.newsletter-form input { flex:1; min-width:0; border:1px solid #e7e9e1; border-radius:4px; background:white; padding:13px 16px; font-size:12px; }
+.newsletter-form button { padding:12px 30px; border:0; border-radius:4px; color:white; background:#2c4621; font-size:12px; cursor:pointer; }
+.newsletter-form button:hover { background:#16321c; }
+.subscribe-success { margin-left:auto; font-size:14px; color:#285b3c; }
+.footer-main { display:grid; grid-template-columns:1.55fr repeat(4,1fr) 1.45fr; gap:30px; padding:36px 24px; }
+.footer-brand p { margin:18px 0; font-size:12px; line-height:1.8; color:#525a50; }
+.social-links { display:flex; gap:18px; }
+.footer-link-group { display:flex; flex-direction:column; gap:10px; }
+.footer-link-group h3,.footer-payments h3 { margin:0 0 10px; font-size:12px; font-weight:700; }
+.footer-link-group a { font-size:11px; line-height:1.5; color:#414a3e; }
+.footer-link-group a:hover { text-decoration:underline; }
+.payment-methods { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:9px; margin-top:22px; }
+.payment-methods b { display:grid; place-items:center; min-height:30px; padding:5px; background:white; border:1px solid #eee; border-radius:4px; font-size:9px; white-space:nowrap; }
+.payment-visa { color:#183980; font-style:italic; } .payment-mastercard { color:#ca4426; } .payment-amex { color:#087fb7; } .payment-paypal { color:#125f99; } .payment-shop { color:#6234d9; }
+.footer-bottom { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 24px; border-top:1px solid #e8ebe3; color:#565d52; font-size:11px; }
+.currency-select select { padding:8px; border:1px solid #e8ebe3; background:white; border-radius:4px; font-size:11px; }
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0; }
+@media(max-width:1000px) { .footer-main { grid-template-columns:repeat(4,minmax(0,1fr)); gap:28px; } .footer-brand { grid-column:span 2; } .footer-payments { grid-column:span 2; max-width:260px; } }
+@media(max-width:600px) { .newsletter-strip { padding:22px 16px; flex-wrap:wrap; gap:16px; } .newsletter-form { width:100%; margin-left:0; gap:8px; } .newsletter-form button { padding-inline:20px; } .footer-main { grid-template-columns:repeat(2,minmax(0,1fr)); padding:28px 16px; } .footer-bottom { padding:16px; flex-wrap:wrap; } .footer-brand,.footer-payments { grid-column:span 2; } }

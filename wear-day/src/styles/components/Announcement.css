@@ -1,0 +1,5 @@
+.announcement { color:#fff; background:#062d1f; font-size:12px; }
+.announcement-inner { width:100%; min-height:34px; padding:6px 24px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.announcement-inner > span { display:flex; align-items:center; gap:8px; }
+.announcement svg { color:#b2aa65; flex-shrink:0; }
+@media(max-width:700px) { .announcement-inner { justify-content:center; padding-inline:12px; font-size:10px; } .announcement-center,.announcement-rating { display:none !important; } }
