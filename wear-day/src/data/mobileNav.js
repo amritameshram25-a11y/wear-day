@@ -1,7 +1,7 @@
 export const items = [
-  { label: 'Home', href: '#home', icon: 'home' },
-  { label: 'Categories', href: '#categories', icon: 'grid' },
-  { label: 'Deals', href: '#new-arrivals', icon: 'tag' },
-  { label: 'Wishlist', href: '#recommended', icon: 'heart' },
-  { label: 'Account', href: '#newsletter', icon: 'user' },
-]
+  { label: "Home", href: "#/", path: "/", icon: "home" },
+  { label: "Men", href: "#/men", path: "/men", icon: "grid" },
+  { label: "Women", href: "#/women", path: "/women", icon: "grid" },
+  { label: "Wishlist", href: "#/wishlist", path: "/wishlist", icon: "heart" },
+  { label: "Bag", href: "#/cart", path: "/cart", icon: "bag" },
+];

@@ -1,2 +1,6 @@
-.recommended { padding-block:0 32px; }
-.recommended .product-swatches { display:none; }
+.recommended {
+  padding-block: 0 32px;
+}
+.recommended .product-swatches {
+  display: none;
+}

@@ -1,8 +1,8 @@
 export const links = [
-  { label: 'Home', href: '#home' },
-  { label: 'Shop', href: '#new-arrivals', menu: ['Shop all', 'Tops & tees', 'Bottoms', 'Outerwear'] },
-  { label: 'Collections', href: '#categories', menu: ['The everyday edit', 'Soft layers', 'Weekend uniform'] },
-  { label: 'Best Sellers', href: '#recommended' },
-  { label: 'New Arrivals', href: '#new-arrivals' },
-  { label: 'Journal', href: '#styling-guides' },
-]
+  { label: "Home", href: "#/", path: "/" },
+  { label: "Men", href: "#/men", path: "/men" },
+  { label: "Women", href: "#/women", path: "/women" },
+  { label: "All Products", href: "#/products", path: "/products" },
+  { label: "Combos", href: "#combos" },
+  { label: "New Arrivals", href: "#new-arrivals" },
+];

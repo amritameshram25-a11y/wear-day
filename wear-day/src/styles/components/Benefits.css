@@ -1,12 +1,65 @@
-.benefits { padding-block:0 18px; }
-.benefits-heading { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
-.benefits-heading h2 { margin:0; font-size:22px; letter-spacing:-.035em; }
-.benefits-heading a { font-size:12px; }
-.benefits-heading a svg { display:none; }
-.benefits-inner { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; border-block:1px solid #eee; padding-block:18px; }
-.benefit-item { display:flex; align-items:center; gap:14px; }
-.benefit-icon { display:grid; place-items:center; flex-shrink:0; }
-.benefit-icon svg { width:28px; height:28px; }
-.benefit-item h3 { margin:0 0 4px; font-size:12px; }
-.benefit-item p { margin:0; font-size:11px; color:#666; }
-@media(max-width:700px) { .benefits-inner { grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px 10px; } .benefit-item { gap:9px; } .benefit-item h3 { font-size:11px; } .benefit-item p { font-size:10px; } }
+.benefits {
+  padding-block: 0 18px;
+}
+.benefits-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.benefits-heading h2 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: -0.035em;
+}
+.benefits-heading a {
+  font-size: 12px;
+}
+.benefits-heading a svg {
+  display: none;
+}
+.benefits-inner {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  border-block: 1px solid #eee;
+  padding-block: 18px;
+}
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.benefit-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.benefit-icon svg {
+  width: 28px;
+  height: 28px;
+}
+.benefit-item h3 {
+  margin: 0 0 4px;
+  font-size: 12px;
+}
+.benefit-item p {
+  margin: 0;
+  font-size: 11px;
+  color: #666;
+}
+@media (max-width: 700px) {
+  .benefits-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 10px;
+  }
+  .benefit-item {
+    gap: 9px;
+  }
+  .benefit-item h3 {
+    font-size: 11px;
+  }
+  .benefit-item p {
+    font-size: 10px;
+  }
+}

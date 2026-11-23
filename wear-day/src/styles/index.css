@@ -14,7 +14,7 @@
   --cream: #f5f3ed;
   --ink: #171917;
   --muted: #767a72;
-  --serif: 'Playfair Display', Georgia, serif;
+  --serif: "Playfair Display", Georgia, serif;
 }
 
 * {
@@ -62,5 +62,18 @@ img {
   background: var(--green);
 }
 
-button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { outline:2px solid #52664a; outline-offset:4px; }
-@media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; transition:none !important; } }
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #52664a;
+  outline-offset: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
